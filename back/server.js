@@ -8,7 +8,9 @@ const fastify = Fastify({
 
 // Declare a route
 fastify.get('/', function (request, reply) {
-  reply.send({ hello: 'world' })
+  qrcode.toDataURL('I am a pony!', function (err, url) {
+    reply.send({ qrcode: url })
+  })
 })
 
 // Run the server!
