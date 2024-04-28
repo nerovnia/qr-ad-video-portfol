@@ -9,3 +9,8 @@ Current state of technology:
 Idea:
 Develop a small REST web service unit that then listens to the QR code requests as a small web server supported by containers.
 When a QR code is called up, a small advertisement is first played and then the actual document is called up.
+
+https://djinni.co/jobs/636651-fullstack-developer-rest-web-service-node-js-/
+
+Company website:
+https://wilke-experience.de/
