@@ -1,10 +1,16 @@
 'use strict'
 import Fastify from 'fastify'
-import * as qrcode from "qrcode";
+import cors from '@fastify/cors'
+import * as qrcode from "qrcode"
 
 const fastify = Fastify({
   logger: true
 })
+
+await fastify.register(cors, { 
+  allowedHeaders: 'Access-Control-Allow-Origin'
+})
+
 
 // Declare a route
 fastify.get('/', function (request, reply) {
