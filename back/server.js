@@ -15,6 +15,7 @@ await fastify.register(cors, {
 // Declare a route
 fastify.get('/', function (request, reply) {
   qrcode.toDataURL('I am a pony!', function (err, url) {
+    //console.log(url);
     reply.send({ qrcode: url })
   })
 })
